@@ -359,7 +359,7 @@ curl: (60) SSL certificate problem: unable to get local issuer certificate
 ```
 
 ```console
-curl --insecure --include https://test.server && echo OK
+curl --insecure --head https://test.server && echo OK
 
 HTTP/1.0 200 OK
 Content-Length: 0
@@ -367,7 +367,7 @@ OK
 ```
 
 ```console
-curl --cacert bundle.pem --include https://test.server && echo OK
+curl --cacert bundle.pem --head https://test.server && echo OK
 
 HTTP/1.0 200 OK
 Content-Length: 0
@@ -492,7 +492,7 @@ trust list | egrep -B1 -A2 'label: (root|intermediate|test.server)'
 ```
 
 ```console
-curl --include https://test.server && echo OK
+curl --head https://test.server && echo OK
 
 HTTP/1.0 200 OK
 Content-Length: 0
