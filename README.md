@@ -349,6 +349,9 @@ Protocols: dict file ftp ftps gopher gophers http https imap imaps mqtt pop3 pop
 Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM NTLM_WB PSL SPNEGO SSL TLS-SRP UnixSockets zstd
 ```
 
+> startup file `.curlrc` can interfere with the following commands.
+> use `--disable` as fichargementrst option to disable its use.
+
 ```console
 curl https://test.server && echo OK
 
@@ -396,6 +399,8 @@ Link:
     -lidn2 -lnettle -lgnutls -lz -lpsl ftp-opie.o gnutls.o http-ntlm.o 
     ../lib/libgnu.a /usr/lib/libunistring.so 
 ```
+
+> startup file `.wgetrc` can interfere with the following commands.
 
 ```console
 wget https://test.server && echo OK
