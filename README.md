@@ -350,7 +350,7 @@ Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerbe
 ```
 
 > startup file `.curlrc` can interfere with the following commands.
-> use `--disable` as fichargementrst option to disable its use.
+> use `--disable` as first option to disable its use.
 
 ```console
 curl https://test.server && echo OK
