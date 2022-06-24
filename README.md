@@ -519,4 +519,5 @@ OK
 
 ## see also
 
+- [minica](https://github.com/jsha/minica)
 - [mkcert](https://github.com/FiloSottile/mkcert)
