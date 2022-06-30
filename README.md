@@ -353,7 +353,7 @@ Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerbe
 > use `--disable` as first option to disable its use.
 
 ```console
-curl https://test.server && echo OK
+curl --head https://test.server && echo OK
 
 curl: (60) SSL certificate problem: unable to get local issuer certificate
 ```
@@ -403,7 +403,7 @@ Link:
 > startup file `.wgetrc` can interfere with the following commands.
 
 ```console
-wget https://test.server && echo OK
+wget --server-response https://test.server && echo OK
 
 --2022-01-18 19:46:35--  https://test.server/
 SSL_INIT
